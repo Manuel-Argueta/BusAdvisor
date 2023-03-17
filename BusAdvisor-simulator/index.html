@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "./styles/map.css"> </link>
+    <link rel = "stylesheet" type = "text/css" href = "./styles/controls.css"> </link>
+    <title>Bus Advisor Simulator</title>
+</head>
+<body>
+    <div id = "map-container">
+        <canvas id = "map" width = "400" height = "400"></canvas>
+    </div> 
+    <div id = "controlContainer"> 
+        <button id = "initBus">New Bus</button>
+        <button id = "startSim">Start Simulation</button>
+        <button id = "stopSim">Stop Simulation</button>
+    </div>
+    <div id = "busCreationForm"> 
+        <input id = "busName" placeholder="Enter Bus Name"> </input> <br>
+        <input id = "busID" placeholder="Enter Bus ID #"> </input> <br>
+        <input id = "busColor" placeholder="Enter Bus Color (HEX CODE)"> </input> <br>
+        <button id = "initRoute">Create Route</button>
+        <button id = "closeRoute">Confirm Route</button>
+        <button id = "confirmBus">Create New Bus</button>
+    </div>
+    <div id = "busListContainer">
+
+    </div>
+    <script type = "module" src = "./scripts/main.js"> </script>
+    <script type = "module" src = "./scripts/userInterface.js"> </script>
+    <script type = "module" src = "./scripts/Map.js"> </script>
+    <script type = "module" src = "./scripts/Bus.js"> </script>
+</body>
+</html>
